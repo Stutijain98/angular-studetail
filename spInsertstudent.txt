@@ -1,0 +1,10 @@
+Create procedure [dbo].[spInsertStudent]
+@Name string,
+@MobileNo. int,
+@Email string,
+@Course string,
+as
+begin
+insert into StudentDetails(Name,MobileNo.,Email,Course)
+values(@Name,@MobileNo.,@Email,@Course)
+end
