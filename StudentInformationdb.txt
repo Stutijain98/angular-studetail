@@ -1,0 +1,19 @@
+
+//Db script
+create database StudentInformationDb;  
+Go;
+
+
+//Table script
+CREATE TABLE [dbo].[StudentDetails](  
+    [Id] [int] IDENTITY(1,1) NOT NULL,  
+    [Name] [varchar](50) NULL,  
+    [MobileNo.] [int] NULL,  
+    [Email] [varchar](50) NULL,  
+    [Course] [varchar](50) NULL,
+    [Fees] [int](50) NULL,
+ CONSTRAINT [PK_StudentDetails] PRIMARY KEY CLUSTERED   
+(  
+    [Id] ASC  
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]  
+) ON [PRIMARY]    
