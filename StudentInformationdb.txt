@@ -7,11 +7,11 @@ Go;
 //Table script
 CREATE TABLE [dbo].[StudentDetails](  
     [Id] [int] IDENTITY(1,1) NOT NULL,  
-    [Name] [varchar](50) NULL,  
-    [MobileNo.] [int] NULL,  
+    [Name] [varchar](50) NOT NULL,  
+    [MobileNo.] [int] NOT NULL,  
     [Email] [varchar](50) NULL,  
-    [Course] [varchar](50) NULL,
-    [Fees] [int](50) NULL,
+    [Course] [varchar](50) NOT NULL,
+    [Fees] [int](50) NOT NULL,
  CONSTRAINT [PK_StudentDetails] PRIMARY KEY CLUSTERED   
 (  
     [Id] ASC  
